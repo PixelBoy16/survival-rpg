@@ -1,0 +1,6 @@
+export type MonsterKind = 'shambler' | 'runner' | 'crawler' | 'elite';
+export type Weapon = 'fists' | 'pipe' | 'hatchet' | 'pistol' | 'rifle' | 'shotgun';
+export type EntityKind = 'player' | MonsterKind | 'loot' | 'container' | 'resource' | 'survivor';
+export type Animation = 'idle' | 'walk' | 'attack' | 'hurt' | 'dead';
+export interface Progress { level:number; xp:number; bankedScrap:number; hunger:number; thirst:number; injury:number; exposure:number; food:number; water:number; ammo:number; mastery:number; checkpoint:string; downUntil:number; dead:boolean; gear:{weapon:Weapon;premium:boolean}[]; premiumItems:{id:string;count:number}[]; protection:number; party?:string; quest?:{id:string; counts:number[]; claimed:boolean}; completed:string[]; skillReady:Record<string,number> }
+export interface Entity { id: string; kind: EntityKind; x: number; y: number; hp: number; maxHp: number; stamina: number; facing: number; animation: Animation; weapon: Weapon; bandages: number; scrap: number; owner?: string; unlockTick?: number; expiresTick?: number; mapId?:string; progress?:Progress; partyId?:string; aiState?:'idle'|'roam'|'investigate'|'chase'|'attack'|'stagger'|'dead'; staggerUntil?:number; guardUntil?:number; eventId?:string; stock?:number }

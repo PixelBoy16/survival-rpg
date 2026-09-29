@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>LAST HAVEN · Quarantine Yard</title></head><body>
+<main id="game" aria-label="Isometric survival game"></main>
+<header><div class="mark">LH</div><div><small>PROJECT / LAST HAVEN</small><h1 id="map-name">Haven Town</h1></div><div class="connection"><i id="light"></i><span id="connection">Connecting…</span></div></header>
+<details id="field-panel"><summary>Field journal &amp; actions</summary>
+<div id="progression">Preparing your survivor…</div><div id="survival"></div><div id="recovery"></div><div id="mission"></div><div id="event-state">No active event</div><div id="party-state">Solo</div>
+<div class="field-actions">
+<button id="prepare">Prepare at Haven</button><button id="travel">Use nearest portal</button><button id="checkpoint">Set checkpoint</button>
+<button id="food">Eat food</button><button id="water">Drink water</button><button id="revive">Revive selected ally</button>
+<label>Weapon <select id="weapon-select" aria-label="Equipped weapon"></select></label>
+<button id="bash">Q · Bash</button><button id="guard">F · Guard</button><button id="rally">G · Rally</button>
+<label>Mission <select id="quest-select" aria-label="Mission"><option value="supplies">Beyond the perimeter</option><option value="relief">Road relief</option><option value="rescue">Bring them home</option></select></label>
+<button id="quest-accept">Accept at Haven</button><button id="quest-claim">Claim at Haven</button><button id="quest-abandon">Abandon mission</button>
+<button id="party-create">Create party</button><button id="party-invite">Invite selected survivor</button><button id="party-join">Accept invitation</button><button id="party-leave">Leave party</button>
+</div></details>
+<section class="tools"><label>Movement <select id="movement-mode" aria-label="Desktop movement mode"><option value="keyboard">WASD / Arrows</option><option value="click">Click to walk</option></select></label><button id="debug">F3 · Debug</button><label>Latency <select id="latency"><option value="0">0 ms</option><option value="75">150 ms RTT</option><option value="150">300 ms RTT</option></select></label><button id="reconnect">Test reconnect</button></section>
+<div id="target">Select an infected or supply cache</div><div id="notice" role="status" aria-live="polite"></div>
+<section class="hud"><div class="survivor"><small>SURVIVOR / VANGUARD</small><span id="inventory">2 bandages · 0 scrap</span></div><div class="vitals"><label>HEALTH <strong id="hpText">100 / 100</strong></label><progress id="hp" max="100" value="100"></progress><label>STAMINA <strong id="staminaText">100</strong></label><progress id="stamina" max="100" value="100"></progress></div><div class="hotbar"><button id="attack"><kbd>SPACE</kbd><span>⚔</span>Attack</button><button id="pipe" class="active"><kbd>1</kbd><span>╱</span>Steel pipe</button><button id="hatchet"><kbd>2</kbd><span>⚒</span>Hatchet</button><button id="heal"><kbd>3</kbd><span>✚</span>Bandage</button><button id="interact"><kbd>E</kbd><span>◇</span>Collect</button></div><button id="respawn" hidden>Return to arrival · R</button></section>
+<div id="joystick" role="group" aria-label="Movement joystick"><div id="joystick-knob"></div></div><div class="touch-zoom"><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button></div><footer><span id="control-help">WASD / ARROWS <b>Move</b> &nbsp; CLICK <b>Select</b> &nbsp; SPACE <b>Attack</b> &nbsp; SCROLL <b>Zoom</b></span><span id="metrics">Waiting for telemetry</span></footer><script type="module" src="/src/main.ts"></script></body></html>

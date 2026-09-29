@@ -1,0 +1,1 @@
+{ "extends": "./tsconfig.json", "compilerOptions": { "outDir": "dist/server", "rootDir": "." }, "include": ["apps/game-server/**/*.ts", "packages/**/*.ts"] }

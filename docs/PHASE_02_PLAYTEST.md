@@ -1,0 +1,17 @@
+# Phase 2 playtest
+
+Run the development launcher and reload both client and server after upgrading from protocol v1. The playable entry point is Haven Town. Open the **Field journal & actions** panel; it scrolls on mobile.
+
+1. At arrival, use **Prepare at Haven**. Accept **Beyond the perimeter**. The journal shows quest objectives, needs, carried scrap, banked scrap and protection charges.
+2. Walk to the Forest portal at (8,5), then **Use nearest portal**. Leaving from far away must fail. Other clients staying in Haven should no longer see the traveler; clients in Forest should see them arrive.
+3. Gather from the green resource at (7,7), defeat two infected, and collect loot. Choose a weapon in the journal; rifle/shotgun require both ownership and level 2. Space/Attack is primary fire; Q/Bash staggers, F/Guard reduces damage, G/Rally unlocks at level 2. All three have buttons on mobile.
+4. Return through the Haven portal at (4,4). Carried scrap is banked. Claim the mission near arrival: gain XP, banked scrap, a rifle and one death-protection item. Reclaiming must fail.
+5. Accept **Road relief**, travel from Haven at (5,8), collect/interact and remain alive for 60 seconds. Avoid the marked hazard. Return and claim a shotgun. Food/water deplete slowly; hunger/thirst below 20% reduce stamina regeneration. Injury slows walking; high exposure damages health. Haven preparation clears these penalties.
+6. In separate clients, create a party, select another survivor, invite, and accept from their journal. Repeat up to four members. A fifth member must be rejected. Fight together and inspect shared markers/member state, nearby kill credit and single-pickup shared loot.
+7. Events start on a global initial 60-second schedule in occupied maps and then repeat after a 60-second cooldown; each lasts at most 90 seconds. Forest: defeat the three-member horde. Road: collect the event supply drop. Hospital: use Collect on the survivor at (7,10) and guide them slowly toward arrival, staying within five tiles. Verify contributor rewards only once; failure cleans up event entities.
+8. Accept **Bring them home** to check Hospital visit, rescue escort and Forest horde-defense objectives together. Use **Abandon mission** to confirm progress is reset without rewards; accepting again starts from zero.
+9. While in a party, get downed. The 20-second timer appears on the recovery button. Another nearby party member selects you and uses **Revive selected ally**, consuming one bandage and avoiding item loss. Revive must fail after full death, across a wall, outside range or without party membership.
+10. Test full death with and without protection. Without it, carried ordinary items and weapons disappear; XP, level and bank remain. With it, exactly one protection charge disappears and other items remain. Premium preservation has automated fixture coverage; this prototype has no premium shop or production item grants. Respawn only after full death; use **Set checkpoint** at an arrival point to select recovery location.
+11. Test desktop WASD and click-to-walk, mobile joystick plus simultaneous action presses, journal scrolling, orientation changes, reconnect and map travel while simulated latency is enabled. Check that map changes cancel old navigation and snapshots contain the correct entities.
+
+Record visual defects, disconnect behavior, FPS/frame time and balance concerns. These manual checks are pending, not implied by the automated suite. Temporary state resets on server restart.
