@@ -1,5 +1,7 @@
 import { z } from 'zod';
 import type { Entity } from '../../shared-types/src/index.js';
+// Browsers under a no-eval CSP must not probe zod's JIT compiler; the server keeps it.
+if (typeof document !== 'undefined') z.config({ jitless: true });
 export const VERSION = 2;
 const seq = z.number().int().min(1).max(Number.MAX_SAFE_INTEGER);
 const id = z.string().regex(/^[a-z]+_[a-zA-Z0-9-]{1,64}$/);

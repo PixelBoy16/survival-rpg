@@ -1,3 +1,4 @@
+import 'pixi.js/unsafe-eval'; // The playtest gateway CSP forbids eval; this Pixi build avoids new Function().
 import { Application, Container, Graphics, Sprite, Texture, Text } from 'pixi.js';
 import { WEAPONS, SKILLS } from '../../../packages/content-schema/src/index.js';
 import { MAPS, QUESTS } from '../../../packages/content-schema/src/world.js';

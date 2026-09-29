@@ -43,6 +43,8 @@ export function createPlaytestGateway(options:{origin:string;code:string;backend
   server.requestTimeout=10000;server.headersTimeout=10000;
   const sockets=new WebSocketServer({noServer:true,maxPayload:2048,perMessageDeflate:false});
   server.on('upgrade',(req,socket,head)=>{
+    // Raw upgrade sockets are no longer managed by http; a client reset must not crash the host.
+    socket.on('error',()=>socket.destroy());
     if(req.url!=='/socket'||req.headers.origin!==origin||!authorized(req)||sockets.clients.size>=100){socket.end('HTTP/1.1 403 Forbidden\r\nConnection: close\r\n\r\n');return;}
     sockets.handleUpgrade(req,socket,head,client=>{
       const upstream=new WebSocket(`ws://127.0.0.1:${options.backendPort}/socket`);
