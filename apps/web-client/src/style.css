@@ -1,6 +1,6 @@
-:root{font-family:Barlow,Segoe UI,sans-serif;color:#e4e6dc;background:#111917;font-synthesis:none}*{box-sizing:border-box}body{margin:0;overflow:hidden}#game{position:fixed;inset:0}canvas{display:block}header{position:fixed;top:28px;left:32px;right:32px;display:flex;gap:15px;align-items:center;pointer-events:none}.mark{border:1px solid #cfdb98;color:#cfdb98;font-weight:700;padding:13px 10px;font-size:20px}small{font-size:10px;letter-spacing:2px;color:#aab99f}h1{font:600 26px 'Barlow Condensed',sans-serif;margin:3px 0;text-transform:uppercase;letter-spacing:1px}h1 span{font-size:14px;color:#a1b08b;margin-left:12px}.connection{margin-left:auto;font-size:12px;text-transform:uppercase;letter-spacing:1px;display:flex;gap:9px;align-items:center}#light{background:#d8a071;width:6px;height:6px;border-radius:50%}.brief{position:fixed;left:32px;top:140px;width:280px;pointer-events:none}h2{font:500 30px 'Barlow Condensed',sans-serif;margin:12px 0}p{color:#97a397;font-size:13px;line-height:1.7}.objective{font-size:12px;display:flex;gap:12px;margin:17px 0;line-height:1.6}.objective b{color:#c5d78b}.tag{border-top:1px solid #56634c66;padding-top:16px;color:#8a9b81;font-size:9px;letter-spacing:2px}.tools{position:fixed;right:32px;top:113px;display:flex;gap:8px;align-items:center;font-size:11px}.tools button,.tools label{background:#14201ce8;border:1px solid #34463b;padding:9px;color:#b8c3ad}select{background:transparent;border:0;color:#c3d396;font:inherit}option{background:#14201c}button{cursor:pointer;font:inherit;color:inherit}button:hover{border-color:#cfdb98!important;color:#ecf8bf}button:focus-visible,select:focus-visible{outline:2px solid #d1e994;outline-offset:3px}#target{position:fixed;bottom:244px;left:50%;transform:translateX(-50%);font-size:12px;color:#cfdb98;background:#14201cdd;padding:9px 18px;border:1px solid #4e6143;white-space:nowrap}#notice{position:fixed;bottom:287px;left:50%;transform:translateX(-50%);color:#efd3aa;font-size:13px;pointer-events:none}.hud{position:fixed;bottom:54px;left:50%;transform:translateX(-50%);width:440px;padding:20px 24px;background:linear-gradient(120deg,#172620f5,#15201af5);border:1px solid #4e614355;border-top:2px solid #a6b879;box-shadow:0 18px 60px #0005}.survivor{display:flex;justify-content:space-between;margin-bottom:15px}.survivor span{font-size:10px;color:#b2bca8}.vitals{display:grid;grid-template-columns:1fr 1fr;gap:5px 16px}.vitals label{font-size:9px;letter-spacing:1px;grid-row:1}.vitals strong{float:right;font-weight:400}.vitals progress{width:100%;height:5px;border:0;background:#33433a;appearance:none}.vitals progress::-webkit-progress-bar{background:#33433a}.vitals progress::-webkit-progress-value{background:#b8cd8f}#stamina::-webkit-progress-value{background:#c7ac73}.hotbar{display:flex;gap:8px;margin-top:19px}.hotbar button{position:relative;width:25%;background:#0f1c17;border:1px solid #34483a;padding:6px 4px 8px;font-size:10px;color:#b3bfaa}.hotbar button.active{border-color:#c5d78b;background:#34422b;color:#e1edc0}.hotbar button span{display:block;font-size:26px;height:36px}.hotbar kbd{position:absolute;top:4px;left:5px;font-size:9px;color:#c4d19f}footer{position:fixed;bottom:18px;left:32px;right:32px;display:flex;justify-content:space-between;color:#82917d;font-size:9px;letter-spacing:.6px}footer b{font-weight:400;color:#bbc6af;margin-left:5px}#respawn{background:#583c31;border:1px solid #bd8967;padding:8px;width:100%;margin-top:8px}@media(max-width:1000px){.brief{width:210px;top:110px}.brief h2{font-size:25px}.tools{top:90px;flex-direction:column;align-items:flex-end}footer{font-size:8px}header{top:18px}}@media(max-height:650px){.brief p,.objective,.tag{display:none}.hud{bottom:40px;padding:12px 20px}#target{bottom:210px}#notice{bottom:245px}}
+:root{font-family:Barlow,Segoe UI,sans-serif;color:#e4e6dc;background:#111917;font-synthesis:none}*{box-sizing:border-box}body{margin:0;overflow:hidden}#game{position:fixed;inset:0}canvas{display:block}header{position:fixed;top:28px;left:32px;right:32px;display:flex;gap:15px;align-items:center;pointer-events:none}.mark{border:1px solid #cfdb98;color:#cfdb98;font-weight:700;padding:13px 10px;font-size:20px}small{font-size:10px;letter-spacing:2px;color:#aab99f}h1{font:600 26px 'Barlow Condensed',sans-serif;margin:3px 0;text-transform:uppercase;letter-spacing:1px}h1 span{font-size:14px;color:#a1b08b;margin-left:12px}.connection{margin-left:auto;font-size:12px;text-transform:uppercase;letter-spacing:1px;display:flex;gap:9px;align-items:center}#light{background:#d8a071;width:6px;height:6px;border-radius:50%}.brief{position:fixed;left:32px;top:140px;width:280px;pointer-events:none}h2{font:500 30px 'Barlow Condensed',sans-serif;margin:12px 0}p{color:#97a397;font-size:13px;line-height:1.7}.objective{font-size:12px;display:flex;gap:12px;margin:17px 0;line-height:1.6}.objective b{color:#c5d78b}.tag{border-top:1px solid #56634c66;padding-top:16px;color:#8a9b81;font-size:9px;letter-spacing:2px}.tools{position:fixed;right:32px;top:113px;display:flex;gap:8px;align-items:center;font-size:11px}.tools button,.tools label{background:#14201ce8;border:1px solid #34463b;padding:9px;color:#b8c3ad}select{background:transparent;border:0;color:#c3d396;font:inherit}option{background:#14201c}button{cursor:pointer;font:inherit;color:inherit}button:hover{border-color:#cfdb98!important;color:#ecf8bf}button:focus-visible,select:focus-visible{outline:2px solid #d1e994;outline-offset:3px}#target{position:fixed;bottom:172px;left:50%;transform:translateX(-50%);font-size:12px;color:#cfdb98;background:#14201cdd;padding:9px 18px;border:1px solid #4e6143;white-space:nowrap}#notice{position:fixed;bottom:212px;left:50%;transform:translateX(-50%);color:#efd3aa;font-size:13px;pointer-events:none}footer{position:fixed;bottom:18px;left:32px;right:32px;display:flex;justify-content:space-between;color:#82917d;font-size:9px;letter-spacing:.6px}footer b{font-weight:400;color:#bbc6af;margin-left:5px}@media(max-width:1000px){.brief{width:210px;top:110px}.brief h2{font-size:25px}.tools{top:90px;flex-direction:column;align-items:flex-end}footer{font-size:8px}header{top:18px}}@media(max-height:650px){.brief p,.objective,.tag{display:none}.hud{bottom:40px}#target{bottom:150px}#notice{bottom:190px}}
 :root{--touch-bottom: max(20px,env(safe-area-inset-bottom))}
-#game canvas{touch-action:none}.hotbar button{width:20%}#joystick,.touch-zoom{display:none}
+#game canvas{touch-action:none}#joystick,.touch-zoom{display:none}
 .mobile-controls{user-select:none;-webkit-user-select:none;touch-action:auto}
 .mobile-controls .brief,.mobile-controls .tools,.mobile-controls kbd,.mobile-controls footer #metrics{display:none}
 .mobile-controls header{top:max(12px,env(safe-area-inset-top));left:16px;right:16px;gap:8px}
@@ -28,3 +28,64 @@
 .mobile-controls #field-panel{top:182px;left:12px;max-width:calc(100% - 80px);width:310px;max-height:calc(100dvh - 235px);padding:6px;font-size:11px;z-index:6}
 .mobile-controls #field-panel[open]{max-height:calc(100dvh - 210px);background:#13221efa}.mobile-controls .field-actions button{min-height:44px}
 @media(orientation:landscape) and (max-height:600px){.mobile-controls #field-panel{top:110px;max-height:calc(100dvh - 150px)}.mobile-controls #field-panel[open]{top:12px;max-height:calc(100dvh - 28px)}}
+
+/* Desktop HUD: emblem medallion, red health / blue stamina bars and an icon hotbar. */
+.hud{position:fixed;bottom:48px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:10px;filter:drop-shadow(0 10px 24px #0008)}
+.portrait{flex:none;width:84px;height:84px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#243039 0,#10161a 70%);border:3px solid #3b3a36;box-shadow:inset 0 0 0 2px #0c0f10,0 0 0 2px #0c0f10}
+.hud img{image-rendering:pixelated}.portrait img{width:64px;height:64px}
+.hud-main{display:grid;gap:6px}.hud .survivor{display:none}
+.vitals{display:grid;gap:4px;padding:6px 8px;background:#0e1214e6;border:2px solid #2d2c29}
+.bar{display:flex;align-items:center;gap:10px;font:600 13px 'Barlow Condensed',Barlow,sans-serif;color:#e8e2d4;text-shadow:1px 1px 0 #000}
+.bar progress{flex:1;min-width:0;height:14px;border:2px solid #07090a;background:#2a2622;appearance:none}
+.bar progress::-webkit-progress-bar{background:#2a2622}.bar progress::-moz-progress-bar{background:var(--fill)}
+.bar progress::-webkit-progress-value{background:var(--fill);box-shadow:inset 0 3px 0 #fff3,inset 0 -3px 0 #0003}
+.hp-bar{--fill:#d23a3a}.stamina-bar{--fill:#3d7fd1}
+.bar strong{width:62px;text-align:right;font-weight:600}#level{width:44px;color:#cfc8b6}.hp-bar::after{content:'';width:44px}
+.hotbar{display:flex;gap:6px}
+.hotbar button{position:relative;width:60px;height:60px;padding:0;display:grid;place-items:center;background:#15191b;border:2px solid #3a3935;box-shadow:inset 0 0 0 2px #07090a}
+.hotbar button img{width:48px;height:48px}.hotbar button span{display:none}
+.hotbar button.active{border-color:#d9d3c0;background:#23282a}
+.hotbar kbd{position:absolute;top:2px;left:4px;font:600 10px Barlow,sans-serif;color:#d6d0bf;text-shadow:1px 1px 0 #000}
+.hotbar b{position:absolute;right:4px;bottom:1px;font:600 12px Barlow,sans-serif;color:#f0ead9;text-shadow:1px 1px 0 #000}
+#respawn{position:absolute;left:0;right:0;bottom:calc(100% + 8px);background:#583c31;border:1px solid #bd8967;padding:8px}
+/* Mobile keeps the earlier touch layout: no medallion, labelled buttons. */
+.mobile-controls .portrait{display:none}.mobile-controls .hud .survivor{display:flex;justify-content:space-between}
+.mobile-controls .hotbar button{height:auto;gap:2px;padding:4px}.mobile-controls .hotbar button img{width:28px;height:28px}.mobile-controls .hotbar button span{display:block;height:auto;font-size:11px}
+.mobile-controls .hp-bar::after,.mobile-controls #level{width:auto}
+
+/* Mission tracker: current objectives plus other missions still available. */
+#quest-tracker{position:fixed;right:32px;top:170px;width:270px;padding:10px 14px 12px;background:#0d1113d9;border:1px solid #2d2c29;border-radius:6px;color:#e8e2d4;font:500 14px Barlow,Segoe UI,sans-serif;text-shadow:1px 1px 0 #000;z-index:2}
+#quest-tracker:empty{display:none}
+#quest-tracker h3{margin:0 0 6px;font:600 16px Barlow,Segoe UI,sans-serif}#quest-tracker h3+ul+h3{margin-top:12px}
+#quest-tracker ul{list-style:none;margin:0;padding:0;display:grid;gap:5px}
+#quest-tracker li{display:flex;gap:9px;align-items:center;line-height:1.25}
+#quest-tracker li::before{content:'';flex:none;width:9px;height:9px;border-radius:50%;border:3px solid #e0833a;background:radial-gradient(circle,#f3c38a 0 2px,transparent 2.5px)}
+#quest-tracker li.done{color:#8f8a7d;text-decoration:line-through}#quest-tracker li.done::before{border-color:#6d6a62;background:#6d6a62}
+#quest-tracker li.claim{color:#f3d58a}#quest-tracker li.claim::before{border-color:#e8c25a;background:#e8c25a}
+#quest-tracker li.available{color:#c9c4b8}#quest-tracker li.available::before{border-color:#b8b3a6;background:radial-gradient(circle,#b8b3a6 0 2px,transparent 2.5px)}
+.mobile-controls #quest-tracker{display:none}
+@media(max-width:1000px){#quest-tracker{top:240px;width:230px;font-size:13px}}
+#quest-tracker li button{all:unset;cursor:pointer}#quest-tracker li button:hover{color:#fff;text-decoration:underline}#quest-tracker li button:focus-visible{outline:2px solid #d1e994;outline-offset:2px}
+#quest-tracker h3{display:flex;justify-content:space-between;align-items:center;gap:8px}#quest-tracker .abandon{background:none;border:1px solid #4a4640;border-radius:3px;padding:1px 6px;font:500 11px Barlow,sans-serif;color:#b8b3a6}#quest-tracker .abandon:hover{border-color:#c0584a!important;color:#f0b3a8}
+
+/* Bottom-right menu bar and the panel each button opens. */
+#game-menu{position:fixed;right:32px;bottom:44px;display:flex;gap:2px;padding:6px 8px;background:#0d1113d9;border:1px solid #2d2c29;border-radius:6px;z-index:4}
+#game-menu button{display:grid;justify-items:center;gap:2px;min-width:64px;padding:4px 6px;background:none;border:1px solid transparent;border-radius:4px;color:#e8e2d4;font:500 13px Barlow,Segoe UI,sans-serif;text-shadow:1px 1px 0 #000}
+#game-menu button:hover,#game-menu button.active{background:#ffffff14;border-color:#5a574f!important}
+#game-menu img,#game-panel img{width:32px;height:32px;image-rendering:pixelated}#game-menu img{filter:grayscale(1) brightness(1.9) contrast(1.15)}
+#game-panel{position:fixed;right:32px;bottom:120px;width:340px;max-height:calc(100dvh - 300px);overflow:auto;padding:12px 16px 16px;background:#0d1113f0;border:1px solid #3a3935;border-radius:6px;color:#e8e2d4;font:500 13px Barlow,Segoe UI,sans-serif;z-index:5;box-shadow:0 18px 50px #0008}
+#game-panel .panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+#game-panel h2{font:600 18px Barlow,Segoe UI,sans-serif;margin:0}#game-panel h3{font:600 13px Barlow,sans-serif;color:#bdb7a8;margin:12px 0 6px;text-transform:uppercase;letter-spacing:1px}
+#game-panel-close{background:none;border:0;color:#bdb7a8;font-size:22px;line-height:1;padding:0 4px}
+#game-panel dl{display:grid;grid-template-columns:1fr auto;gap:4px 12px;margin:0}#game-panel dt{color:#a8a293}#game-panel dd{margin:0;text-align:right}
+#game-panel .slots{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+#game-panel .slot{position:relative;display:grid;place-items:center;aspect-ratio:1;background:#15191b;border:2px solid #3a3935;font-size:11px;color:#bdb7a8}
+#game-panel .slot b{position:absolute;right:3px;bottom:0;font:600 12px Barlow,sans-serif;color:#f0ead9;text-shadow:1px 1px 0 #000}
+#game-panel .rows{display:grid;gap:6px}
+#game-panel .row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:7px 10px;background:#15191b;border:1px solid #2d2c29;border-radius:4px}
+#game-panel .row small{display:block;color:#8f8a7d;letter-spacing:0;font-size:11px}
+#game-panel .row.current{border-color:#8fcf6a}
+#game-panel .row button,#game-panel .actions button{background:#23282a;border:1px solid #4a4640;border-radius:3px;padding:5px 10px;color:#e8e2d4;font:inherit;white-space:nowrap}
+#game-panel .actions{display:grid;gap:6px}#game-panel .actions button{padding:9px 12px;text-align:left}
+.mobile-controls #game-menu,.mobile-controls #game-panel{display:none}
+#game-panel:not([hidden]) ~ #quest-tracker{display:none}

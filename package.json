@@ -21,7 +21,8 @@
     "benchmark:aoi": "tsx scripts/benchmark-interest.ts",
     "load:local": "tsx scripts/load-local.ts",
     "db:migrate": "tsx scripts/migrate.ts",
-    "playtest:internet": "tsx scripts/playtest.ts"
+    "playtest:internet": "tsx scripts/playtest.ts",
+    "assets:hud": "tsx --env-file=.env scripts/generate-hud-icons.ts"
   },
   "dependencies": {
     "pg": "^8.23.0",
